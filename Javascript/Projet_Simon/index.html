@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="SimonCSS.css" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="back">
+        <div class="pad-shape1" data-pad="1">
+            <audio preload="auto" class="sound1">
+                <source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="pad-shape2" data-pad="2">
+            <audio preload="auto" class="sound2">
+                <source src="sounds/mp3/sounds_02.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="pad-shape3" data-pad="3">
+            <audio preload="auto" class="sound3">
+                <source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="pad-shape4" data-pad="4">
+            <audio preload="auto" class="sound4">
+                <source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="circle">
+            <div class="level">Level 1</div>
+        </div>
+    </div>
+
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script>
+
+        $('document').ready(function() {
+
+            nbRequire = 2;
+            finish = true
+            win = [];
+            played = [];
+
+
+            $('.pad-shape2').on('click', function(){
+                $(this).animate({'opacity':'1'},400);
+                var myAudio = new Audio("Simon/cri1.ogg");
+                myAudio.play();
+                $(this).animate({'opacity':'0.5'},400);
+                played.push(2);
+                verifVictory(played.length-1);
+            });
+
+            $('.pad-shape1').on('click', function(){
+                $(this).animate({'opacity':'1'},400);
+                var myAudio = new Audio("Simon/cri2.ogg");
+                myAudio.play();
+                $(this).animate({'opacity':'0.5'},400);
+                played.push(1);
+                verifVictory(played.length-1);
+            });
+
+            $('.pad-shape3').on('click', function(){
+                $(this).animate({'opacity':'1'},400);
+                var myAudio = new Audio("Simon/cri3.ogg");
+                myAudio.play();
+                $(this).animate({'opacity':'0.5'},400);
+                played.push(3);
+                verifVictory(played.length-1);
+            });
+
+            $('.pad-shape4').on('click', function(){
+                $(this).animate({'opacity':'1'},400);
+                var myAudio = new Audio("Simon/cri4.ogg");
+                myAudio.play();
+                $(this).animate({'opacity':'0.5'},400);
+                played.push(4);
+                verifVictory(played.length-1);
+            });
+
+            $('.circle').on('click', function(){
+                if(finish){
+                    pattern(nbRequire);
+                    finish = false;
+                    $('.level').text("Level 1");
+                }
+            });
+
+            function verifVictory(n){
+                if(win[n]!=played[n]){
+                    win = [];
+                    played = [];
+                    nbRequire=2;
+                    finish = true;
+                    $('.level').text("Perdu :/");
+                }else if(win.length == played.length){
+                    nbRequire++;
+                    setTimeout(()=>pattern(nbRequire),1000);
+                    win=[];
+                    played= [];
+                    $('.level').text("Level " + nbRequire-1);
+                }
+            }
+
+            
+
+            async function pattern (n){
+    
+                for(let i =0; i<n; i++){
+                number = Math.floor(Math.random() * 4) + 1
+                win.push(number);
+
+                switch(number){
+                    case 1:
+                        await $('.pad-shape1').animate({'opacity':'1'},400).promise();
+                        var myAudio = new Audio("Simon/cri1.ogg");
+                        myAudio.play();
+                        $('.pad-shape1').animate({'opacity':'0.5'},400);
+                        break;
+                    case 2:
+                        await $('.pad-shape2').animate({'opacity':'1'},400).promise();
+                        var myAudio = new Audio("Simon/cri2.ogg");
+                        myAudio.play();
+                        $('.pad-shape2').animate({'opacity':'0.5'},400);
+                        break;
+                    case 3:
+                        await $('.pad-shape3').animate({'opacity':'1'},400).promise();
+                        var myAudio = new Audio("Simon/cri3.ogg");
+                        myAudio.play();
+                        $('.pad-shape3').animate({'opacity':'0.5'},400);
+                        break;
+                    case 4:
+                        await $('.pad-shape4').animate({'opacity':'1'},400).promise();
+                        var myAudio = new Audio("Simon/cri4.ogg");
+                        myAudio.play();
+                        $('.pad-shape4').animate({'opacity':'0.5'},400);
+                        break;
+                }
+            }
+            }
+
+            function game(){
+                const equals = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+            
+                while(!finish){
+                    pattern(nbRequire);
+                    if(!equals(played,win)){
+                        finish=true;
+                    }else{
+                        nbRequire++;
+                        win=[];
+                        played=[];
+                    }
+                }
+            }
+
+    });
+    </script>
+</body>
+</html>

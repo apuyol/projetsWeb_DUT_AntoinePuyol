@@ -1,0 +1,90 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(rgba(82, 157, 233), rgba(177, 227, 252));
+    margin: 0vw;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+a {
+    color: rgb(20, 62, 82);
+    margin: 2vw;
+}
+
+a:hover {
+    color: gold;
+}
+
+footer {
+    border-top: black solid 2px;
+    background-color: rgb(151, 209, 195);
+    margin-top: 2vw;
+}
+
+.lien {
+    padding-top: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lien a:hover {
+    color: gold;
+}
+
+.lien a {
+    color: rgb(20, 62, 82);
+}
+
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 3vw;
+    }
+    a {
+        font-size: 1.5vw;
+    }
+    footer {
+        height: 7vw;
+    }
+    .lien a {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    p {
+        font-size: 4vw;
+    }
+    a {
+        font-size: 3vw;
+    }
+    footer {
+        height: 9vw;
+    }
+    .lien a {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 5vw;
+    }
+    a {
+        font-size: 4vw;
+    }
+    footer {
+        height: 11vw;
+    }
+    .lien a {
+        font-size: 4.5vw;
+    }
+}

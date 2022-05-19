@@ -1,0 +1,345 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(rgba(82, 157, 233), rgba(177, 227, 252));
+    margin: 0vw;
+}
+
+a:hover {
+    color: gold;
+}
+
+@media screen and (min-width: 992px) {
+    p,
+    h2 {
+        margin: 2vh;
+    }
+    .presentation {
+        font-size: 2.5vw;
+        margin-bottom: 3vw;
+        text-align: center;
+    }
+    .exemple {
+        display: flex;
+        justify-content: space-around;
+    }
+    .courriel>p {
+        font-size: 1.5vw;
+    }
+    .type {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        width: 45%;
+        padding: 1vw;
+    }
+    .type p {
+        font-size: 1.5vw;
+        color: rgb(20, 62, 82);
+    }
+    .Notre_exemple {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        width: 45%;
+        padding: 1vw;
+    }
+    .Notre_exemple p {
+        font-size: 1.5vw;
+        color: rgb(20, 62, 82);
+    }
+    .questionnaire p,
+    li {
+        font-size: 1.5vw;
+    }
+    .questionnaire li {
+        color: rgb(20, 62, 82);
+    }
+    .pos_q {
+        display: flex;
+        justify-content: center;
+    }
+    .question {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        width: 65%;
+        padding: 1vw;
+    }
+    .Synt_1 p {
+        font-size: 1.5vw;
+    }
+    .S_metier {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        padding: 1vw;
+        margin: 2vw;
+    }
+    .S_metier p {
+        color: rgb(20, 62, 82);
+    }
+    .S_Int {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        padding: 1vw;
+        margin: 2vw;
+    }
+    .S_Int p,
+    h1,
+    h2 {
+        color: rgb(20, 62, 82);
+    }
+    .conclusion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conclusion p {
+        font-size: 1.5vw;
+        margin-right: 3px;
+    }
+    .conclusion a {
+        font-size: 1.5vw;
+    }
+    a {
+        color: rgb(20, 62, 82);
+        font-size: 1.5vw;
+    }
+    footer {
+        border-top: black solid 2px;
+        background-color: rgb(151, 209, 195);
+        height: 4vw;
+    }
+    .lien {
+        padding-top: 1vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .presentation {
+        font-size: 3.5vw;
+        margin-bottom: 3vw;
+        text-align: center;
+    }
+    .exemple {
+        display: flex;
+        justify-content: space-around;
+    }
+    .courriel>p {
+        font-size: 2.5vw;
+    }
+    .type {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        width: 45%;
+        padding: 1vw;
+    }
+    .type p {
+        font-size: 2.5vw;
+        color: rgb(20, 62, 82);
+    }
+    .Notre_exemple {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        width: 45%;
+        padding: 1vw;
+    }
+    .Notre_exemple p {
+        font-size: 2.5vw;
+        color: rgb(20, 62, 82);
+    }
+    .questionnaire p,
+    li {
+        font-size: 2.5vw;
+    }
+    .questionnaire li {
+        color: rgb(20, 62, 82);
+    }
+    .pos_q {
+        display: flex;
+        justify-content: center;
+    }
+    .question {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        width: 65%;
+        padding: 1vw;
+    }
+    .Synt_1 p {
+        font-size: 2.5vw;
+    }
+    .S_metier {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        padding: 1vw;
+        margin: 2vw;
+    }
+    .S_metier p {
+        color: rgb(20, 62, 82);
+    }
+    .pos_I {
+        display: flex;
+        justify-content: center;
+    }
+    .S_Int {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        padding: 1vw;
+        margin: 2vw;
+    }
+    .S_Int p,
+    h1,
+    h2 {
+        color: rgb(20, 62, 82);
+    }
+    .conclusion {
+        display: inline;
+    }
+    .conclusion p {
+        font-size: 2.5vw;
+        margin-right: 3px;
+        display: inline;
+    }
+    .conclusion a {
+        font-size: 2.5vw;
+        display: inline;
+    }
+    a {
+        color: rgb(20, 62, 82);
+        font-size: 2.5vw;
+    }
+    footer {
+        border-top: black solid 2px;
+        margin-top: 2vw;
+        background-color: rgb(151, 209, 195);
+        height: 5vw;
+    }
+    .lien {
+        padding-top: 1vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .presentation {
+        font-size: 5.5vw;
+        margin-bottom: 3vw;
+        text-align: center;
+    }
+    .courriel>p {
+        font-size: 4.5vw;
+    }
+    .exemple {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .type {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        width: 95%;
+        padding: 2vw;
+        margin-bottom: 2vw;
+    }
+    .type p {
+        font-size: 4.5vw;
+        color: rgb(20, 62, 82);
+    }
+    .Notre_exemple {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        width: 95%;
+        padding: 2vw;
+    }
+    .Notre_exemple p {
+        font-size: 4.5vw;
+        color: rgb(20, 62, 82);
+    }
+    .questionnaire p,
+    li {
+        font-size: 4.5vw;
+    }
+    .questionnaire li {
+        color: rgb(20, 62, 82);
+        margin: 2vw;
+    }
+    .pos_q {
+        display: flex;
+        justify-content: center;
+    }
+    .question {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        width: 75%;
+        padding: 1vw;
+    }
+    .Synt_1 p {
+        font-size: 4.5vw;
+    }
+    .S_metier {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        padding: 2vw;
+        margin: 2vw;
+    }
+    .S_metier p {
+        color: rgb(20, 62, 82);
+        padding: 2vw;
+    }
+    .S_Int {
+        background-color: rgb(151, 209, 195);
+        border: black solid;
+        border-radius: 10px;
+        padding: 1vw;
+        margin: 2vw;
+    }
+    .S_Int p,
+    h1,
+    h2 {
+        color: rgb(20, 62, 82);
+    }
+    .conclusion {
+        display: inline;
+    }
+    .conclusion p {
+        font-size: 4.5vw;
+        margin-right: 3px;
+        display: inline;
+    }
+    .conclusion a {
+        font-size: 4.5vw;
+        display: inline;
+    }
+    a {
+        color: rgb(20, 62, 82);
+        font-size: 4.5vw;
+    }
+    footer {
+        border-top: black solid 2px;
+        margin-top: 2vw;
+        background-color: rgb(151, 209, 195);
+        height: 8vw;
+    }
+    .lien {
+        padding-top: 1vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

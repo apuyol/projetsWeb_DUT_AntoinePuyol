@@ -1,0 +1,1 @@
+Projet consistant à réaliser le jeu Simon avec Jquery.

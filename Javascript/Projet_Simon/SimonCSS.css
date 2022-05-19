@@ -1,0 +1,75 @@
+body {
+    height: 100vh;
+    width: 100vh;
+    background-color: aliceblue;
+}
+
+
+.back {
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pad-shape1{
+    background-color: #cf5151;
+    opacity: 0.5;
+    padding: 12.5%;
+    width: 23%;
+    height: 23%;
+    border-top-left-radius: 100%;
+}
+
+.pad-shape2{
+    position: absolute;
+    background-color: #53d458;
+    opacity: 0.5;
+    top: 0px;
+    left: 205px;
+    padding: 12.5%;
+    width: 23%;
+    height: 23%;
+    border-top-right-radius: 100%;
+    transition:background-color 1s ease;
+}
+
+.pad-shape3{
+    background-color: #5771d9;
+    opacity: 0.5;
+    position: absolute;
+    padding: 12.5%;
+    width: 23%;
+    height: 23%;
+    top: 205px;
+    border-bottom-left-radius: 100%;
+}
+
+.pad-shape4{
+    background-color: #cddb4b;
+    opacity: 0.5;
+    position: absolute;
+    padding: 12.5%;
+    width: 23%;
+    height: 23%;
+    left: 205px;
+    top: 205px;
+    border-bottom-right-radius: 100%;
+}
+
+.circle{
+    position: absolute;
+    background-color: black;
+    padding: 50px;
+    height: 40px;
+    width: 40px;
+    top: 125px;
+    left: 125px;
+    z-index: 1;
+    border-radius: 100%;
+}
+
+.level{
+    color: white;
+}

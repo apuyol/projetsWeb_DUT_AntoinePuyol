@@ -1,0 +1,208 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(rgba(82, 157, 233), rgba(177, 227, 252));
+    margin: 0vw;
+}
+
+p,
+li {
+    color: rgb(20, 62, 82);
+}
+
+.pos_c {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    background-color: rgb(151, 209, 195);
+    border: black solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    background-color: rgb(151, 209, 195);
+    border: black solid;
+    border-radius: 10px;
+    margin-bottom: 2vw;
+}
+
+.titre {
+    border-bottom: solid black 2px;
+    text-align: center;
+}
+
+.competence,
+.logiciel,
+.formation,
+.experience,
+.loisir {
+    background-color: rgb(151, 209, 195);
+    border: black solid;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(151, 209, 195);
+    border-top: black solid 2px;
+}
+
+.lien {
+    padding-top: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lien a {
+    color: rgb(20, 62, 82);
+}
+
+a:hover {
+    color: gold;
+}
+
+@media screen and (min-width: 992px) {
+    .contact {
+        width: 25%;
+        height: 10vw;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+        padding-bottom: 1vw;
+    }
+    .nom {
+        font-size: 3vw;
+    }
+    .adresse {
+        font-size: 2vw;
+    }
+    .description {
+        padding: 1vw;
+    }
+    .ligne {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 2vw;
+    }
+    .competence,
+    .logiciel,
+    .formation,
+    .experience,
+    .loisir {
+        padding: 1vw;
+    }
+    li,
+    .texte,
+    .titre {
+        font-size: 1.5vw;
+    }
+    .ligne_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 3vw;
+    }
+    footer {
+        height: 4vw;
+    }
+    .lien a {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .contact {
+        width: 75%;
+        height: 15vw;
+        margin: 2vw;
+        padding-bottom: 5vw;
+        padding-top: 5vw;
+    }
+    .nom {
+        font-size: 5vw;
+    }
+    .adresse {
+        font-size: 4vw;
+    }
+    .description {
+        padding: 2vw;
+    }
+    .titre {
+        font-size: 3vw;
+    }
+    .competence,
+    .logiciel,
+    .formation,
+    .experience,
+    .loisir {
+        padding: 1vw;
+        margin: 2vw;
+    }
+    .contenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    li,
+    .texte {
+        font-size: 2.5vw;
+    }
+    footer {
+        height: 4vw;
+    }
+    .lien a {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 75%;
+        height: 15vw;
+        margin: 2vw;
+        padding-bottom: 5vw;
+        padding-top: 5vw;
+    }
+    .nom {
+        font-size: 6vw;
+    }
+    .adresse {
+        font-size: 5vw;
+    }
+    .description {
+        padding: 2vw;
+    }
+    .titre {
+        font-size: 4vw;
+    }
+    .competence,
+    .logiciel,
+    .formation,
+    .experience,
+    .loisir {
+        padding: 1vw;
+        margin: 2vw;
+    }
+    .contenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    li,
+    .texte {
+        font-size: 3.5vw;
+    }
+    footer {
+        height: 5vw;
+    }
+    .lien a {
+        font-size: 3vw;
+    }
+}
